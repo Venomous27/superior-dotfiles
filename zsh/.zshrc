@@ -49,7 +49,25 @@ alias tty-clock='tty-clock -c -s -b -C 6'
 alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 alias fastfetch='fastfetch --config ~/.config/fastfetch/current.jsonc'
 alias resolve='distrobox enter ubuntu -- bash -lc "QT_QPA_PLATFORM=xcb __GL_SYNC_TO_VBLANK=0 /opt/resolve/bin/resolve"'
-alias dotsave='cd ~/dotfiles && git add . && git commit -m \"update\" && git push'
+
+#Dotsave Function
+dotsave() {
+    cd ~/dotfiles || return
+
+    echo
+    git status --short
+    echo
+
+    echo -n "Commit message: "
+    read msg
+
+    [ -z "$msg" ] && echo "Aborted." && return
+
+    git add .
+    git commit -m "$msg"
+    git push
+}
+
 # ---------------------------
 # STARSHIP
 # ---------------------------
