@@ -1,0 +1,5 @@
+.cache
+.mozilla
+.ssh
+.gnupg
+.local/share/keyrings

@@ -1,0 +1,93 @@
+/* =============================================================================
+ * powermenu.rasi — Modern Vertical Glass Menu
+ * ============================================================================= */
+
+@import "colors.rasi"
+
+* {
+    background-color: transparent;
+
+    text-color: @fg-main;
+
+    font: "JetBrainsMono Nerd Font 15";
+}
+
+/* ── Window ────────────────────────────────── */
+
+window {
+    location: center;
+    anchor: center;
+
+    width: 420px;
+
+    border: 0;
+
+    border-radius: 28px;
+
+    padding: 18px;
+
+    background-color: rgba(18,18,18,0.82);
+}
+
+/* ── Layout ────────────────────────────────── */
+
+mainbox {
+    spacing: 12px;
+
+    children: [ listview ];
+}
+
+/* ── Hide Input ────────────────────────────── */
+
+inputbar,
+prompt,
+entry,
+case-indicator {
+    enabled: false;
+}
+
+/* ── List ──────────────────────────────────── */
+
+listview {
+    columns: 1;
+
+    lines: 6;
+
+    spacing: 10px;
+
+    scrollbar: false;
+
+    dynamic: true;
+
+    fixed-height: false;
+}
+
+/* ── Buttons ───────────────────────────────── */
+
+element {
+    padding: 16px 20px;
+
+    spacing: 14px;
+
+    border-radius: 18px;
+
+    orientation: horizontal;
+
+    background-color: rgba(28,28,28,0.88);
+}
+
+/* ── Hover ─────────────────────────────────── */
+
+element selected.normal {
+    background-color: rgba(255,255,255,0.10);
+}
+
+/* ── Text ──────────────────────────────────── */
+
+element-text {
+    vertical-align: 0.5;
+
+    text-color: inherit;
+
+    font: "JetBrainsMono Nerd Font 15";
+}

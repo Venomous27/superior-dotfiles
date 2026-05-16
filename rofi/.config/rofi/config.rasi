@@ -1,0 +1,24 @@
+/* =============================================================================
+ * config.rasi — Global Rofi Defaults
+ * ============================================================================= */
+
+configuration {
+    modi:                   "drun,run,window";
+    show-icons:             true;
+    icon-theme:             "Papirus-Dark";
+    drun-display-format:    "{name}";
+    display-drun:           " Apps";
+    display-run:            " Run";
+    display-window:         " Windows";
+    terminal:               "kitty";
+    ssh-client:             "ssh";
+
+    /* Performance */
+    threads:                0;
+    scroll-method:          0;
+
+    /* Input */
+    kb-cancel:              "Escape,Super+space";
+    kb-accept-entry:        "Return,KP_Enter";
+    kb-remove-char-back:    "BackSpace";
+}

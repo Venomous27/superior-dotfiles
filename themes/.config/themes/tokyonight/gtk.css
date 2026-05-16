@@ -1,0 +1,19 @@
+/* TOKYONIGHT GTK */
+
+.thunar,
+.thunar window,
+.thunar .view {
+    background-color: #1a1b26;
+    color: #c0caf5;
+}
+
+.thunar .sidebar {
+    background-color: #16161e;
+}
+
+headerbar,
+toolbar,
+.titlebar {
+    background-color: #1f2335;
+    border: none;
+}

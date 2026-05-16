@@ -1,0 +1,34 @@
+/* DARK ROOM GTK */
+
+.thunar,
+.thunar window,
+.thunar .view {
+    background-color: #0b0f14;
+    color: #d4dce8;
+}
+
+.thunar .sidebar {
+    background-color: #10151c;
+}
+
+headerbar,
+toolbar,
+.titlebar {
+    background-color: #11161d;
+    border: none;
+}
+
+/* Selection colors */
+
+.view:selected,
+.view text:selected,
+.view:selected:focus {
+    background-color: #2b3340;
+    color: #000000;
+}
+
+treeview:selected,
+treeview:selected:focus {
+    background-color: #2b3340;
+    color: #000000;
+}

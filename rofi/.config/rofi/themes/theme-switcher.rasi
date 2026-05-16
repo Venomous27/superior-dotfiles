@@ -1,0 +1,119 @@
+/* =============================================================================
+ * theme-switcher.rasi — Universal Neutral Glass Theme
+ * ============================================================================= */
+
+@import "colors.rasi"
+
+* {
+    font: "Inter Medium 11";
+
+    background-color: transparent;
+
+    text-color: @fg-main;
+}
+
+/* ── Window ────────────────────────────────── */
+
+window {
+    location: center;
+    anchor: center;
+
+    width: 420px;
+
+    border: 0;
+    border-radius: 24px;
+
+    padding: 18px;
+
+    background-color: @bg-main;
+}
+
+/* ── Theme List ────────────────────────────── */
+
+listview {
+    lines: 8;
+
+    columns: 1;
+
+    spacing: 8px;
+
+    scrollbar: false;
+
+    cycle: true;
+
+    dynamic: true;
+
+    fixed-height: false;
+}
+
+/* ── Search ────────────────────────────────── */
+
+inputbar {
+    padding: 12px 18px;
+
+    spacing: 12px;
+
+    border-radius: 100px;
+
+    background-color: @bg-panel;
+
+    children: [ prompt, entry ];
+}
+
+prompt {
+    enabled: true;
+
+    content: "󰔎";
+
+    font: "JetBrainsMono Nerd Font 12";
+
+    text-color: @fg-dim;
+}
+
+entry {
+    placeholder: "Search theme...";
+
+    placeholder-color: @fg-dim;
+
+    text-color: @fg-main;
+
+    background-color: transparent;
+}
+
+/* ── Theme List ────────────────────────────── */
+
+listview {
+    lines: 8;
+
+    columns: 1;
+
+    spacing: 6px;
+
+    scrollbar: false;
+
+    cycle: true;
+
+    dynamic: true;
+}
+
+/* ── Theme Entries ─────────────────────────── */
+
+element {
+    padding: 12px 16px;
+
+    border-radius: 14px;
+
+    background-color: transparent;
+}
+
+element selected.normal {
+    background-color: @bg-selected;
+}
+
+/* ── Text ──────────────────────────────────── */
+
+element-text {
+    text-color: inherit;
+
+    vertical-align: 0.5;
+}
