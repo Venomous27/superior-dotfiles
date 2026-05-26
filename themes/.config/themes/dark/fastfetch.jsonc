@@ -122,7 +122,7 @@
       "type": "command",
       "key": "├ 󰅐 OS Age",
 	"keyColor": "38;2;200;200;200",
-       "text": "echo \"$(( ($(date +%s) - $(date -d '2026-04-04 15:32:52' +%s)) / 86400 )) days\"",
+       "text": "echo \"$(( ($(date +%s) - $(date -d '2026-05-20 15:03:32' +%s)) / 86400 )) days\"",
     },
     {
       "type": "uptime",

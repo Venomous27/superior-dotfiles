@@ -1,0 +1,129 @@
+/* ~/.config/rofi/themes/unicode.rasi
+   Monochrome Modern Theme
+*/
+
+* {
+    font: "JetBrainsMono Nerd Font Medium 12";
+
+    bg: #0f0f0fdd;
+    bg-alt: #171717;
+    bg-hover: #242424;
+    border: #2e2e2e;
+
+    fg: #e8e8e8;
+    fg-dim: #8c8c8c;
+
+    accent: #ffffff;
+
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* ── Window ───────────────────────────── */
+
+window {
+    transparency: "real";
+
+    location: center;
+    anchor: center;
+
+    width: 720px;
+    height: 520px;
+
+    border-radius: 22px;
+    border: 1px solid;
+    border-color: @border;
+
+    background-color: @bg;
+}
+
+/* ── Layout ───────────────────────────── */
+
+mainbox {
+    padding: 18px;
+    spacing: 14px;
+    background-color: transparent;
+}
+
+/* ── Search Bar ───────────────────────── */
+
+inputbar {
+    background-color: @bg-alt;
+
+    border-radius: 16px;
+    border: 1px solid;
+    border-color: @border;
+
+    padding: 14px 18px;
+    margin: 0px 0px 10px 0px;
+
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @fg-dim;
+    background-color: transparent;
+}
+
+entry {
+    placeholder: "Search unicode...";
+    placeholder-color: @fg-dim;
+
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* ── Grid ─────────────────────────────── */
+
+listview {
+    columns: 3;
+    lines: 8;
+
+    spacing: 10px;
+    scrollbar: false;
+
+    background-color: transparent;
+}
+
+/* ── Cards ────────────────────────────── */
+
+element {
+    padding: 14px;
+
+    border-radius: 16px;
+
+    background-color: @bg-alt;
+
+    border: 1px solid;
+    border-color: transparent;
+}
+
+element normal.normal {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @bg-hover;
+
+    border-color: @accent;
+
+    text-color: @accent;
+}
+
+/* ── Text ─────────────────────────────── */
+
+element-text {
+    background-color: transparent;
+
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+
+    text-color: inherit;
+}
+
+/* ── Disable ──────────────────────────── */
+
+scrollbar {
+    enabled: false;
+}
