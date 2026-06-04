@@ -9,10 +9,11 @@ if ! pidof awww-daemon >/dev/null; then
 fi
 
 SELECTED=$(
-    for img in "$WALL_DIR"/*; do
-        [[ "$img" =~ \.(jpg|jpeg|png|webp|JPG|PNG)$ ]] || continue
+	find "$WALL_DIR" -type f | while read -r img; do
+ 	[[ "$img" =~ \.(jpg|jpeg|png|webp|JPG|PNG)$ ]] || continue
 
-        printf "%s\0icon\x1f%s\n" "$(basename "$img")" "$img"
+        REL_PATH="${img#$WALL_DIR/}"
+	printf "%s\0icon\x1f%s\n" "$REL_PATH" "$img"
     done | rofi \
         -dmenu \
         -i \

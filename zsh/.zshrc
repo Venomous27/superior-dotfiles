@@ -1,4 +1,4 @@
-# ---------------------------
+115;9u# ---------------------------
 # EXIT IF NOT INTERACTIVE
 # ---------------------------
 [[ $- != *i* ]] && return
@@ -54,7 +54,9 @@ alias grep='grep --color=auto'
 alias tty-clock='tty-clock -c -s -b -C 6'
 alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 alias fastfetch='fastfetch --config ~/.config/fastfetch/current.jsonc'
-
+alias v='nvim'
+alias aion="cd ~/repos/odysseus && docker compose up -d"
+alias aioff="cd ~/repos/odysseus && docker compose down"
 #Dotsave Function
 dotsave() {
     cd ~/dotfiles || return

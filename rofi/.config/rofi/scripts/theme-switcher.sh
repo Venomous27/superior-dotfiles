@@ -19,11 +19,6 @@ THEME=$(
 
 SRC="$THEME_DIR/$THEME"
 
-# Wallpaper
-awww img ~/.config/themes/$THEME/wallpaper.jpg \
-  --transition-type wipe \
-  --transition-duration 1
-
 # ── Hyprland ─────────────────────────────────
 
 cp "$SRC/hypr.conf" \
@@ -69,3 +64,30 @@ hyprctl reload >/dev/null 2>&1
 
 notify-send \
   "Theme Switched To $THEME"
+
+# ── Wallpaper Selection ──────────────────────
+
+WALL_DIR="$HOME/Pictures/Wallpapers/$THEME"
+
+SELECTED=$(
+    find "$WALL_DIR" -type f | while read -r img; do
+        [[ "$img" =~ \.(jpg|jpeg|png|webp|JPG|PNG)$ ]] || continue
+
+        REL_PATH="${img#$WALL_DIR/}"
+
+        printf "%s\0icon\x1f%s\n" "$REL_PATH" "$img"
+    done | rofi \
+        -dmenu \
+        -i \
+        -show-icons \
+        -theme ~/.config/rofi/themes/wallpaper.rasi \
+        -p "󰸉"
+)
+
+if [ -n "$SELECTED" ]; then
+    WALLPATH="$WALL_DIR/$SELECTED"
+
+    awww img "$WALLPATH" \
+        --transition-type wipe \
+        --transition-duration 1
+fi
