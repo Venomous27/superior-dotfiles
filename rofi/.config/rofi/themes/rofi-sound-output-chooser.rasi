@@ -1,0 +1,134 @@
+@import "colors.rasi"
+
+* {
+    font: "Inter Medium 11";
+    background-color: transparent;
+    text-color: #f5f5f5;
+}
+
+/* ── Window ────────────────────────────────── */
+
+window {
+    transparency: "real";
+
+    location: center;
+    anchor: center;
+
+    width: 540px;
+
+    border: 0;
+    border-radius: 24px;
+
+    background-color: rgba(18, 18, 18, 0.78);
+}
+
+/* ── Main Layout ───────────────────────────── */
+
+mainbox {
+    padding: 20px;
+    spacing: 16px;
+
+    children: [ inputbar, listview ];
+}
+
+/* ── Search Bar ────────────────────────────── */
+
+inputbar {
+    background-color: rgba(28, 28, 28, 0.88);
+
+    border-radius: 100px;
+
+    padding: 12px 18px;
+
+    spacing: 12px;
+
+    children: [ prompt, entry ];
+}
+
+prompt {
+    enabled: true;
+
+    content: "󰓃";
+
+    font: "JetBrainsMono Nerd Font 12";
+
+    text-color: #bdbdbd;
+
+    vertical-align: 0.5;
+}
+
+entry {
+    placeholder: "Select audio output...";
+
+    placeholder-color: #9a9a9a;
+
+    text-color: #f5f5f5;
+
+    cursor: text;
+
+    vertical-align: 0.5;
+}
+
+/* ── Device List ───────────────────────────── */
+
+listview {
+    lines: 6;
+
+    columns: 1;
+
+    layout: vertical;
+
+    fixed-height: false;
+
+    cycle: true;
+
+    dynamic: true;
+
+    scrollbar: false;
+
+    spacing: 6px;
+}
+
+/* ── Device Rows ───────────────────────────── */
+
+element {
+    orientation: horizontal;
+
+    border-radius: 14px;
+
+    padding: 10px 14px;
+
+    spacing: 14px;
+
+    children: [ element-icon, element-text ];
+}
+
+element normal.normal {
+    background-color: transparent;
+}
+
+element selected.normal {
+    background-color: rgba(255, 255, 255, 0.10);
+
+    text-color: #ffffff;
+}
+
+/* ── Icons ─────────────────────────────────── */
+
+element-icon {
+    enabled: false;
+}
+
+/* ── Text ──────────────────────────────────── */
+
+element-text {
+    expand: true;
+
+    cursor: inherit;
+
+    text-color: inherit;
+
+    vertical-align: 0.5;
+
+    horizontal-align: 0.0;
+}
