@@ -16,7 +16,7 @@ done < <(
 )
 
 choice=$(printf "%s\n" "${!MAP[@]}" | sort | rofi -dmenu \
-    -theme /home/venom/dotfiles/rofi/.config/rofi/themes/rofi-sound-output-chooser.rasi \
+    -theme /home/venom/dotfiles/rofi/.config/rofi/themes/audio-output.rasi \
     -p "󰓃 Output")
 [ -z "$choice" ] && exit
 
