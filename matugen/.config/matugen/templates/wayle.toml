@@ -1,0 +1,92 @@
+[styling.palette]
+bg-base = "{{ colors.background.default.hex }}"
+bg-surface = "{{ colors.surface.default.hex }}"
+bg-surface-elevated = "{{ colors.surface_container.default.hex }}"
+fg-default = "{{ colors.on_background.default.hex }}"
+fg-muted = "{{ colors.on_surface_variant.default.hex }}"
+fg-subtle = "{{ colors.surface_variant.default.hex }}"
+accent = "{{ colors.primary.default.hex }}"
+border-default = "{{ colors.outline.default.hex }}"
+status-info = "{{ colors.primary.default.hex }}"
+status-success = "{{ colors.secondary.default.hex }}"
+status-error = "{{ colors.error.default.hex }}"
+
+# Hard overrides for legacy module fallbacks
+primary = "{{ colors.primary.default.hex }}"
+blue = "{{ colors.primary.default.hex }}"
+yellow = "{{ colors.primary.default.hex }}"
+red = "{{ colors.error.default.hex }}"
+green = "{{ colors.secondary.default.hex }}"
+
+[modules.dashboard]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+
+[modules.hyprland-workspaces]
+container-bg-color = "transparent"
+active-color = "{{ colors.primary.default.hex }}"
+occupied-color = "{{ colors.on_surface_variant.default.hex }}"
+empty-color = "{{ colors.surface_variant.default.hex }}"
+
+[modules.idle-inhibit]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "transparent"
+
+[modules.window-title]
+label-color = "{{ colors.on_background.default.hex }}"
+
+[modules.media]
+icon-color = "{{ colors.on_surface_variant.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_surface_variant.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.clock]
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_background.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.systray]
+container-bg-color = "transparent"
+
+[modules.bluetooth]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_background.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.brightness]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_background.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.battery]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_background.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.network]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_background.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.volume]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_background.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.ram]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+label-color = "{{ colors.on_background.default.hex }}"
+button-bg-color = "transparent"
+
+[modules.notifications]
+icon-color = "{{ colors.primary.default.hex }}"
+icon-bg-color = "transparent"
+button-bg-color = "transparent"

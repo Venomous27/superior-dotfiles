@@ -1,5 +1,57 @@
-.cache
-.mozilla
-.ssh
-.gnupg
-.local/share/keyrings
+# ==========================================
+# STRICT SYSTEM & SECURITY BLOCKS
+# ==========================================
+# Keeps your hardware identity and encryptions offline
+
+# System caches and data indexes
+.cache/
+**/.cache/
+
+# Browser configs, sessions, and histories (Never upload)
+.mozilla/
+.chrome/
+.config/google-chrome/
+.config/BraveSoftware/
+.config/discord/
+
+# Secure Shell Keys (SSH)
+.ssh/
+**/.ssh/
+
+# GNU Privacy Guard (GPG encryption identities)
+.gnupg/
+**/.gnupg/
+
+# System Keyrings and master credential managers
+.local/share/keyrings/
+**/.local/share/keyrings/
+
+# ==========================================
+# PRIVACY PROTECTION & UTILITIES
+# ==========================================
+
+# Text editor swap/backup layers
+*.swp
+*.swo
+*~
+.viminfo
+.nvimpager/
+
+# Shell histories containing plain text commands/passwords
+.bash_history
+.zsh_history
+.zsh_sessions/
+.lesshst
+
+# Local environments / Local API targets
+.env
+.env.*
+.secrets
+secrets.*
+*.pem
+*.key
+
+# Common temporary variables
+.xsession-errors*
+.Xauthority
+.ICEauthority

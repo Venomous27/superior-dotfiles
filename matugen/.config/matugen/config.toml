@@ -1,0 +1,6 @@
+[config]
+prefix = "@"
+
+[templates.wayle]
+input_path = "~/.config/matugen/templates/wayle.toml"
+output_path = "~/.config/wayle/matugen/colors.toml"

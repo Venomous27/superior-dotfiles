@@ -1,0 +1,158 @@
+imports = ["./matugen/colors.toml"]
+
+[general]
+font-sans = "JetBrainsMono Nerd Font Mono"
+
+[bar]
+scale = 0.699999988079071
+bg = "bg-base"
+background-opacity = 100
+button-label-size = 1.100000023841858
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+    "separator",
+    "idle-inhibit",
+    "separator",
+    "window-title",
+    "separator",
+    "media",
+]
+center = ["clock"]
+right = [
+    "systray",
+    "bluetooth",
+    "brightness",
+    "battery",
+    "network",
+    "volume",
+    "ram",
+    "notifications",
+]
+
+[modules.dashboard]
+icon-color = "fg-default"
+icon-bg-color = "transparent"
+
+[modules.hyprland-workspaces]
+workspace-padding = 0.5
+icon-size = 1.0
+label-size = 1.0
+workspace-ignore = []
+active-indicator = "background"
+active-color = "accent"
+occupied-color = "fg-muted"
+empty-color = "fg-subtle"
+container-bg-color = "transparent"
+border-show = false
+border-color = "border-default"
+
+[modules.idle-inhibit]
+icon-size = 1.0
+icon-color-activated = "accent"
+icon-color-deactivated = "accent"
+icon-bg-color = "transparent"
+label-show = false
+
+[modules.window-title]
+icon-show = false
+label-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.media]
+format = "{{ artist }} - {{ title }}"
+icon-color = "fg-muted"
+icon-bg-color = "transparent"
+label-color = "fg-muted"
+button-bg-color = "transparent"
+
+[modules.clock]
+format = "%H:%M - %A, %b %d"
+icon-show = false
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.systray]
+icon-size = 1.0
+tray-padding = 0.5
+spacing = 6
+container-bg-color = "transparent"
+button-bg-color = "transparent"
+
+[modules.bluetooth]
+icon-size = 1.0
+icon-color-connected = "accent"
+icon-color-disconnected = "fg-muted"
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.brightness]
+icon-size = 1.0
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+# Hover Popup Activation:
+tooltip-show = true
+tooltip-bg-color = "bg-surface-elevated"
+tooltip-label-color = "fg-default"
+
+[modules.battery]
+icon-size = 1.0
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+icon-color-default = "accent"
+icon-color-low = "status-error"
+icon-color-charging = "status-success"
+
+[modules.network]
+icon-size = 1.0
+label-show = true
+icon-color-connected = "accent"
+icon-color-disconnected = "status-error"
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.volume]
+icon-size = 1.0
+label-show = true
+icon-color-default = "accent"
+icon-color-muted = "fg-muted"
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.cpu]
+icon-size = 1.0
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.ram]
+format = "{{ used_gib }}GB"
+icon-size = 1.0
+icon-color = "accent"
+icon-bg-color = "transparent"
+label-color = "fg-default"
+button-bg-color = "transparent"
+
+[modules.notifications]
+icon-size = 1.0
+icon-show = true
+icon-color-default = "accent"
+icon-color-muted = "fg-muted"
+icon-bg-color = "transparent"
+label-show = false
+button-bg-color = "transparent"
+
+[wallpaper]
+engine-enabled = false

@@ -26,4 +26,8 @@ if [ -n "$SELECTED" ]; then
     awww img "$WALL_DIR/$SELECTED" \
         --transition-type wipe \
         --transition-duration 1
+
+# 1. Extract the colors from the selected wallpaper using Matugen
+/usr/bin/matugen image "$WALL_DIR/$SELECTED" --source-color-index 0
+
 fi
