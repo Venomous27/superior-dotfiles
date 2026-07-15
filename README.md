@@ -153,14 +153,14 @@ mv ~/.config/{hypr,kitty,waybar,rofi,thunar} ~/.config-backup/ 2>/dev/null
 ### 3. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/superior-dotfiles.git ~/superior-dotfiles
+git clone https://github.com/Venomous27/superior-dotfiles.git ~/superior-dotfiles
 cd ~/superior-dotfiles
 ```
 
 ### 4. Deploy with Stow
 
 ```bash
-stow .
+stow cava fastfetch gtk-3.0 hypr kitty rofi themes xsettingsd zsh wayle matugen icons gtk-themes
 ```
 
 ### 5. Verify & Launch
@@ -170,11 +170,6 @@ Restart Hyprland (or reboot), then confirm everything loaded:
 ```bash
 hyprctl reload
 ```
-
-* Open the launcher with your configured Rofi keybind.
-* Trigger a theme switch to confirm the proxy engine is writing configs correctly.
-* Check `waybar` and `kitty` picked up the new palette.
-
 ---
 
 *Built with plenty of AI assistance and zero regrets. 🚀*
