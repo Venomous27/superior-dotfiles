@@ -27,13 +27,12 @@ I directed the workflows, ironed out the functionality, and let AI handle the he
 Watch the system in action, showcasing smooth transitions and layout switches:
 
 ## 🎨 Dynamic Theme Switching Proxy  
-https://github.com/user-attachments/assets/5ede6646-16fa-44b5-ad2b-075c918fb411
-
+https://github.com/user-attachments/assets/59f5cff9-f70b-4cf1-b9a6-e852cd3c47f0
 
 ## 🪟 Tiling & Scrolling Layout Toggle 
-https://github.com/user-attachments/assets/37bf6c73-10e2-4f2d-841b-cb51b26bd28d
+https://github.com/user-attachments/assets/32b297fb-f3bd-44a6-8e2d-ea367441ad02
 
-
+---
 
 ### 🖼️ System Screenshots
 
