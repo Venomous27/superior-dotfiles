@@ -6,8 +6,7 @@
   <img alt="Repo Size" src="https://img.shields.io/github/repo-size/Venomous27/superior-dotfiles?style=for-the-badge&labelColor=8bd5ca&color=161616">
 </p>
 
-A hyper-aesthetic, highly functional Hyprland desktop environment built for maximum daily productivity. Managed cleanly with **GNU Stow** and powered by a centralized proxy theme engine.
-
+A simple and beautiful Hyprland daily driver desktop environment, built for seamless tiling and powered by a dynamic proxy theme engine.
 
 ---
 
