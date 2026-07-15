@@ -3,8 +3,7 @@
 <p align="center">
   <img alt="Last Commit" src="https://img.shields.io/github/last-commit/Venomous27/superior-dotfiles?style=for-the-badge&color=8bd5ca&labelColor=161616">
   <img alt="Stars" src="https://img.shields.io/github/stars/Venomous27/superior-dotfiles?style=for-the-badge&color=8bd5ca&labelColor=161616">
-  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/Venomous27/superior-dotfiles?style=for-the-badge&color=8bd5ca&labelColor=161616">
-
+  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/Venomous27/superior-dotfiles?style=for-the-badge&labelColor=8bd5ca&color=161616">
 </p>
 
 A hyper-aesthetic, highly functional Hyprland desktop environment built for maximum daily productivity. Managed cleanly with **GNU Stow** and powered by a centralized proxy theme engine.
