@@ -1,10 +1,13 @@
 <h1 align="center">【 venomous's dotfiles 】</h1>
 
-<p align="center">
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/Venomous27/superior-dotfiles?style=for-the-badge&color=8bd5ca&labelColor=161616">
-  <img alt="Stars" src="https://img.shields.io/github/stars/Venomous27/superior-dotfiles?style=for-the-badge&color=8bd5ca&labelColor=161616">
-  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/Venomous27/superior-dotfiles?style=for-the-badge&labelColor=8bd5ca&color=161616">
-</p>
+<div align="center"> 
+
+![](https://img.shields.io/github/last-commit/Venomous27/superior-dotfiles?&style=for-the-badge&color=8ad7eb&logo=git&logoColor=D9E0EE&labelColor=1E202B)
+![](https://img.shields.io/github/stars/Venomous27/superior-dotfiles?style=for-the-badge&logo=andela&color=86dbd7&logoColor=D9E0EE&labelColor=1E202B)
+![](https://img.shields.io/github/repo-size/Venomous27/superior-dotfiles?color=86dbce&label=SIZE&logo=protondrive&style=for-the-badge&logoColor=D9E0EE&labelColor=1E202B)
+
+</div>
+<!--thanks end4 for these badges https://github.com/end-4 -->
 
 A simple and beautiful Hyprland daily driver desktop environment, built for seamless tiling and powered by a dynamic proxy theme engine.
 
