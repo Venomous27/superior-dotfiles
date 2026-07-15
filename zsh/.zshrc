@@ -1,4 +1,4 @@
-115;9u# ---------------------------
+# ---------------------------
 # EXIT IF NOT INTERACTIVE
 # ---------------------------
 [[ $- != *i* ]] && return
@@ -53,7 +53,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias tty-clock='tty-clock -c -s -b -C 6'
 alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
-alias fastfetch='fastfetch --config ~/.config/fastfetch/current.jsonc'
+alias ff='fastfetch --config ~/.config/fastfetch/current.jsonc'
 alias v='nvim'
 alias aion="cd ~/repos/odysseus && docker compose up -d"
 alias aioff="cd ~/repos/odysseus && docker compose down"
@@ -83,6 +83,9 @@ eval "$(starship init zsh)"
 # ---------------------------
 # AUTOSTART
 # ---------------------------
-fastfetch
+#fastfetch
 
 
+#Alias for backlight
+alias on='/usr/local/bin//backlight.sh on'
+alias off='/usr/local/bin//backlight.sh off'
