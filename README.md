@@ -26,17 +26,20 @@ I directed the workflows, ironed out the functionality, and let AI handle the he
 
 Watch the system in action, showcasing smooth transitions and layout switches:
 
-| Dynamic Theme Switching Proxy | Tiling & Scrolling Layout Toggle |
-|---|---|
-| <img src="assets/theme_switch.gif" width="400" alt="Theme Switch Demo"> | <img src="assets/layout_demo.gif" width="400" alt="Layout Switch Demo"> |
+## 🎨 Dynamic Theme Switching Proxy  
+https://github.com/user-attachments/assets/5ede6646-16fa-44b5-ad2b-075c918fb411
+
+
+## 🪟 Tiling & Scrolling Layout Toggle 
+https://github.com/user-attachments/assets/37bf6c73-10e2-4f2d-841b-cb51b26bd28d
+
+
 
 ### 🖼️ System Screenshots
 
 Closer looks at individual application themes and terminal workflows:
 
-| Terminal & Fastfetch Layout (`kitty`) | File Manager Aesthetics (`thunar`) |
-|---|---|
-| <img src="assets/terminal_preview.png" width="400" alt="Terminal Preview"> | <img src="assets/file_manager_preview.png" width="400" alt="File Manager Preview"> |
+### Adding soon 
 
 ---
 
