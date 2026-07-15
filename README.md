@@ -63,7 +63,7 @@ Closer looks at individual application themes and terminal workflows:
 | **Symlinks** | [GNU Stow](https://www.gnu.org/software/stow/) | Manages dotfiles using symbolic links | Required to map these configurations into your `$HOME`. |
 | **App Launcher** | [Rofi-Wayland](https://github.com/lbonn/rofi) | Wayland-compatible launcher and menu system | The core menu handler executing the theme selection menu. |
 | **Status Bar** | [Wayle](https://wayle.app/guide/getting-started) | Highly customizable Wayland status bar | Displays live system/theme state and reflects proxy changes. |
-| **Wallpaper Engine** | [awww](https://github.com/LGFae/swww) | Animated wallpaper daemon for Wayland | Drives wallpaper transitions tied to each theme swap. |
+| **Wallpaper Engine** | [awww](https://codeberg.org/LGFae/awww) | Animated wallpaper daemon for Wayland | Drives wallpaper transitions tied to each theme swap. |
 | **Color Generation** | [Matugen](https://github.com/InioX/matugen) | Material You color schemes from wallpapers | Generates the palettes the proxy engine injects into app configs. |
 | **Brightness** | [Brightnessctl](https://github.com/Hummer12007/brightnessctl) | CLI display brightness control | Powers brightness keybinds. |
 | **Screenshot Editing** | [Satty](https://github.com/gabm/Satty) | Screenshot annotation tool for Wayland | Handles the annotate/edit step of the screenshot workflow. |
