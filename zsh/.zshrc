@@ -57,6 +57,11 @@ alias ff='fastfetch --config ~/.config/fastfetch/current.jsonc'
 alias v='nvim'
 alias aion="cd ~/repos/odysseus && docker compose up -d"
 alias aioff="cd ~/repos/odysseus && docker compose down"
+alias s="pacman -S"
+alias r="pacman -Rns"
+alias ss="pacman -Ss"
+alias nm="hyprsunset --gamma_max 200% --temperature 5000 & disown"
+alias nmn="hyprsunset -i"
 #Dotsave Function
 dotsave() {
     cd ~/dotfiles || return

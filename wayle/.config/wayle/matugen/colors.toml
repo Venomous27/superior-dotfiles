@@ -1,92 +1,92 @@
 [styling.palette]
-bg-base = "#18130b"
-bg-surface = "#18130b"
-bg-surface-elevated = "#241f17"
-fg-default = "#ece1d4"
-fg-muted = "#d2c4b4"
-fg-subtle = "#4e4539"
-accent = "#f0be6d"
-border-default = "#9b8f80"
-status-info = "#f0be6d"
-status-success = "#dbc3a1"
+bg-base = "#19120c"
+bg-surface = "#19120c"
+bg-surface-elevated = "#261e18"
+fg-default = "#efe0d5"
+fg-muted = "#d5c3b6"
+fg-subtle = "#51443a"
+accent = "#ffb877"
+border-default = "#9e8e82"
+status-info = "#ffb877"
+status-success = "#e2c0a5"
 status-error = "#ffb4ab"
 
 # Hard overrides for legacy module fallbacks
-primary = "#f0be6d"
-blue = "#f0be6d"
-yellow = "#f0be6d"
+primary = "#ffb877"
+blue = "#ffb877"
+yellow = "#ffb877"
 red = "#ffb4ab"
-green = "#dbc3a1"
+green = "#e2c0a5"
 
 [modules.dashboard]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
 
 [modules.hyprland-workspaces]
 container-bg-color = "transparent"
-active-color = "#f0be6d"
-occupied-color = "#d2c4b4"
-empty-color = "#4e4539"
+active-color = "#ffb877"
+occupied-color = "#d5c3b6"
+empty-color = "#51443a"
 
 [modules.idle-inhibit]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
 label-color = "transparent"
 
 [modules.window-title]
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 
 [modules.media]
-icon-color = "#d2c4b4"
+icon-color = "#d5c3b6"
 icon-bg-color = "transparent"
-label-color = "#d2c4b4"
+label-color = "#d5c3b6"
 button-bg-color = "transparent"
 
 [modules.clock]
 icon-bg-color = "transparent"
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 button-bg-color = "transparent"
 
 [modules.systray]
 container-bg-color = "transparent"
 
 [modules.bluetooth]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 button-bg-color = "transparent"
 
 [modules.brightness]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 button-bg-color = "transparent"
 
 [modules.battery]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 button-bg-color = "transparent"
 
 [modules.network]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 button-bg-color = "transparent"
 
 [modules.volume]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 button-bg-color = "transparent"
 
 [modules.ram]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
-label-color = "#ece1d4"
+label-color = "#efe0d5"
 button-bg-color = "transparent"
 
 [modules.notifications]
-icon-color = "#f0be6d"
+icon-color = "#ffb877"
 icon-bg-color = "transparent"
 button-bg-color = "transparent"
