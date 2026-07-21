@@ -5,12 +5,18 @@
 ![](https://img.shields.io/github/last-commit/Venomous27/superior-dotfiles?&style=for-the-badge&color=8ad7eb&logo=git&logoColor=D9E0EE&labelColor=1E202B)
 ![](https://img.shields.io/github/stars/Venomous27/superior-dotfiles?style=for-the-badge&logo=andela&color=86dbd7&logoColor=D9E0EE&labelColor=1E202B)
 ![](https://img.shields.io/github/repo-size/Venomous27/superior-dotfiles?color=86dbce&label=SIZE&logo=protondrive&style=for-the-badge&logoColor=D9E0EE&labelColor=1E202B)
+<a href="https://discord.gg/wrtk6zXhJ"> <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2Fwrtk6zXhJ%3Fwith_counts%3Dtrue&query=approximate_member_count&style=for-the-badge&logo=discord&logoColor=D9E0EE&label=discord&labelColor=%231E202B&color=86dbc0&link=https%3A%2F%2Fdiscord.gg%2Fwrtk6zXhJ"> </a>
 
 </div>
 <!--thanks end4 for these badges https://github.com/end-4 -->
 
 A simple and beautiful Hyprland daily driver desktop environment, built for seamless tiling and powered by a dynamic proxy theme engine.
 
+--- 
+---
+> **⚠️ DISCLAIMER / WARNING:**
+> These dotfiles have **not** been tested on a fresh system or a generic machine. They are deeply customized and work perfectly on my personal build, but things might break on yours. Please **be careful and take a complete backup of your configurations before doing anything**. I will not be held responsible for any damage, data loss, or broken setups!
+---
 ---
 
 ## 🤖 The Story Behind This Rice
@@ -75,7 +81,6 @@ Closer looks at individual application themes and terminal workflows:
 | **Screenshot Capture** | [Hyprshot](https://github.com/Gustash/Hyprshot) | Screenshot utility built for Hyprland | Handles the capture step of the screenshot workflow. |
 | **Clipboard** | [wl-clipboard](https://github.com/bugaevc/wl-clipboard) | Wayland clipboard utilities (`wl-copy`/`wl-paste`) | Required for clipboard actions across the desktop. |
 | **System Info** | [Fastfetch](https://github.com/fastfetch-cli/fastfetch) | Fast system information tool | Used in the terminal welcome layout. |
-| **Shell** | [Zsh](https://www.zsh.org/) | Feature-rich Unix shell | Default shell targeted by the terminal configs. |
 | **Idle Daemon** | [Hypridle](https://github.com/hyprwm/hypridle) | Idle daemon for Hyprland | Triggers lock/sleep behavior. |
 | **Screen Locker** | [Hyprlock](https://github.com/hyprwm/hyprlock) | GPU-accelerated screen locker | Provides the themed lock screen. |
 | **Desktop Portal** | [xdg-desktop-portal-hyprland](https://github.com/hyprwm/xdg-desktop-portal-hyprland) | XDG portal backend for Hyprland | Enables screen sharing, screenshots, and desktop integration. |
@@ -90,7 +95,7 @@ On top of the base dependencies above, this setup optionally uses the official *
  
 Plugins are managed through `hyprpm`, Hyprland's built-in plugin manager, so no manual compiling is needed.
  
-### Install & Enable `hyprscrolling`
+### Install & Enable `hyprscrolling & Gloview`
  
 ```bash
 # Update hyprpm's plugin headers to match your installed Hyprland version
@@ -98,9 +103,11 @@ hyprpm update
  
 # Add the official hyprland-plugins repo (contains hyprscrolling)
 hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm add https://github.com/fedsfarm/gloview
  
 # Enable the plugin
 hyprpm enable hyprscrolling
+hyprpm enable gloview
  
 # Load enabled plugins into the running session
 hyprpm reload
@@ -145,7 +152,7 @@ Install everything listed in the [Core Software](#-crucial-architecture--core-so
 
 ### 2. Back Up Existing Configs
 
-> ⚠️ **Why this step matters:** GNU Stow will **not** overwrite files that already exist at the target location. If you already have configs sitting in `~/.config/` (e.g. `hypr`, `kitty`, `waybar`, `rofi`, `thunar`), Stow will detect the conflict and simply refuse to symlink — it exits without an error and without doing anything, so it can look like the install "worked" when nothing actually got linked. Move your existing configs out of the way first so Stow has a clean target to symlink into.
+> ⚠️ **Why this step matters:** GNU Stow will **not** overwrite files that already exist at the target location. If you already have configs sitting in `~/.config/` (e.g. `hypr`, `kitty`, `rofi`, `thunar`), Stow will detect the conflict and simply refuse to symlink — it exits without an error and without doing anything, so it can look like the install "worked" when nothing actually got linked. Move your existing configs out of the way first so Stow has a clean target to symlink into.
 
 ```bash
 mkdir -p ~/.config-backup
@@ -160,9 +167,11 @@ cd ~/superior-dotfiles
 ```
 
 ### 4. Deploy with Stow
+> **⚠️ Note on Themes & Icons Folders:**
+> I haven't included the `gtk-themes`, `icons`, `gtk-themes`, `xsettingsd`  folders in the default Stow command because they contain my actual theme files. If you want to use my full dynamic theme switcher setup, **please back up your existing themes and icons first**, delete your old folders, and then run Stow to link these. Afterward, you can simply move your old custom files back into the newly symlinked folders!
 
 ```bash
-stow cava fastfetch gtk-3.0 hypr kitty rofi themes xsettingsd zsh wayle matugen icons gtk-themes
+stow cava fastfetch hypr kitty rofi themes xsettingsd wayle matugen 
 ```
 
 ### 5. Verify & Launch
